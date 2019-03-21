@@ -1,0 +1,24 @@
+{
+  "name": "wooza_front-end_test",
+  "version": "1.0.0",
+  "description": "Teste para Front-end",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Wooza",
+    "Teste",
+    "Front-end"
+  ],
+  "author": "Aldiran Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "^1.7.8",
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
+    "angular-route": "^1.7.8",
+    "express": "^4.16.4"
+  }
+}
