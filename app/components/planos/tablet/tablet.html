@@ -1,7 +1,7 @@
-<div class="tablet">
-    <div ng-repeat="x in info.planos" class="tablet__repeat">
+<div class="tablet wrap">
+    <div ng-repeat="x in info.planos" class="repeat">
         <a ng-href="#!/formulario/{{ x.sku }}/">
-            <div class="tablet__opcao" ng-show="{{ x.ativo }}">
+            <div class="tablet__opcao opcao" ng-show="{{ x.ativo }}">
                 <p class="franquia">{{ x.franquia }}</p>
                 <p class="valor">{{ x.valor }}</p>
                 <p class="comprar">Comprar</p>

@@ -1,7 +1,7 @@
-<div class="computador">
-    <div ng-repeat="x in info.planos" class="computador__repeat">
+<div class="computador wrap">
+    <div ng-repeat="x in info.planos" class="repeat">
         <a ng-href="#!/formulario/{{ x.sku }}/">
-            <div class="computador__opcao" ng-show="{{ x.ativo }}">
+            <div class="computador__opcao opcao" ng-show="{{ x.ativo }}">
                 <p class="franquia">{{ x.franquia }}</p>
                 <p class="valor">{{ x.valor }}</p>
                 <div class="computador__opcao--aparelho">

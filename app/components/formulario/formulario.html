@@ -1,26 +1,16 @@
-<form class="formulario">
-    <p>Username:
-        <input type="text" ng-model="form.name" />
-    </p>
-
-    <p>Email:
-        <input type="email" ng-model="form.email" />
-    </p>
-
-    <p class="oi">Data de Nascimento:
-        <input type="date" ng-model="form.dataNascimento" />
-    </p>
-
-    <p>CPF:
-        <input type="number" ng-model="form.cpf" />
-    </p>
-
-    <p>Telefone:
-        <input type="tel" ng-model="form.telefone" />
-    </p>
-
-    <p>
-        <input type="submit" ng-click="enviarFormulario()" />
-    </p>
-
-</form>
+<div class="form">
+    <form class="form__content">
+        <p>Preencha seus dados</p>
+        <input type="text" class="form__content--estilo" ng-model="form.nome" placeholder="Nome Completo" required />
+    
+        <input type="email" class="form__content--estilo" ng-model="form.email" placeholder="E-mail" required />
+    
+        <input type="text" class="form__content--estilo" ng-model="form.dataNascimento" placeholder="Data de Nascimento" required />
+    
+        <input type="text" class="form__content--estilo" ng-model="form.cpf" placeholder="CPF" required />
+    
+        <input type="tel" class="form__content--estilo" ng-model="form.telefone" placeholder="Telefone" />
+    
+        <a class="btn-confirmar" ng-click="enviarFormulario()">Confirmar</a>
+    </form>
+</div>
