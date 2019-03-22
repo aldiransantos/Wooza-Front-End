@@ -1,12 +1,21 @@
-<div class="computador" ng-repeat="x in info.planos">
-    <div>
-        <p>{{ x.franquia }}</p>
-        <p>{{ x.valor }}</p>
-        <p>{{ x.aparelho.nome }}</p>
-        <p>{{ x.aparelho.valor }}</p>
-        <p>{{ x.aparelho.numeroParcelas }}</p>
-        <p>{{ x.aparelho.valorParcela }}</p>
-        <p>{{ x.ativo }}</p>
+<div class="computador">
+    <div ng-repeat="x in info.planos" class="computador__repeat">
+        <a ng-href="#!/formulario/{{ x.sku }}/">
+            <div class="computador__opcao" ng-show="{{ x.ativo }}">
+                <p class="franquia">{{ x.franquia }}</p>
+                <p class="valor">{{ x.valor }}</p>
+                <div class="computador__opcao--aparelho">
+                    <p class="computador__opcao--aparelho-nome">{{ x.aparelho.nome }}</p>
+                    <p class="computador__opcao--aparelho-valor">{{ x.aparelho.valor }}</p>
+                    <div ng-show="{{ x.aparelho.valorParcela }}">
+                        <p class="computador__opcao--aparelho-numeroParcelas">
+                            {{ x.aparelho.numeroParcelas }} parcelas de {{ x.aparelho.valorParcela }}
+                        </p>
+                    </div>
+                    
+                </div>
+                <p class="comprar">Comprar</p>
+            </div>
+        </a>
     </div>
-    <a href="#!/form/{{ x.sku }}">Comprar</a>
 </div>

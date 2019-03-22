@@ -17,9 +17,9 @@ app.config(function ($routeProvider) {
             templateUrl: "./components/planos/wifi/wifi.html",
             controller: "wifiCtrl"
         })
-        .when("/form/:id", {
+        .when("/formulario/:id", {
             templateUrl: "./components/formulario/formulario.html",
-            controller: "formCtrl"
+            controller: "formularioCtrl"
         })
         .otherwise({
             templateUrl: "./view/error404.html"

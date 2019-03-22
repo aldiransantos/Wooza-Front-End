@@ -1,0 +1,159 @@
+*,
+header,
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background: url('imgs/background.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+header,
+footer {
+    text-align: center;
+    height: 50px;
+}
+
+header .frase {
+    font-variant: small-caps;
+    position: relative;
+    top: 40px;
+    color: #1f8ac9;
+    left: -52px;
+    font-size: 22px;
+}
+
+header .logo {
+    margin: 20px 0 50px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #1f8ac9;
+}
+
+footer p a {
+    color: #1f8ac9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p a:hover {
+    color: #186fa1;
+}
+
+footer,
+.plataformas,
+.computador,
+.tablet,
+.wifi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plataformas,
+.computador,
+.tablet,
+.wifi {
+    min-height: 600px;
+}
+
+.plataformas__repeat,
+.computador__repeat,
+.tablet__repeat,
+.wifi__repeat {
+    margin: 20px;
+}
+
+.plataformas__opcoes,
+.computador__opcao,
+.tablet__opcao,
+.wifi__opcao {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+    padding: 40px;
+    text-align: center;
+}
+
+.computador__opcao,
+.tablet__opcao,
+.wifi__opcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-width: 200px;
+    height: 200px;
+}
+
+.plataformas__opcoes:hover {
+    background-color: rgba(31, 138, 201, .4);
+}
+
+.plataformas__opcoes--nome {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.franquia,
+.valor {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.comprar {
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all .4s;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.comprar:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+    transition: all .4s;
+}
+
+.computador__opcao,
+.tablet__opcao,
+.wifi__opcao {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.computador__opcao:hover {
+    background-color: rgba(1, 253, 148, 0.945);
+}
+
+.computador__opcao--aparelho {
+    margin-top: 10px;
+}
+
+.computador__opcao--aparelho-nome,
+.computador__opcao--aparelho-valor,
+.computador__opcao--aparelho-numeroParcelas {
+    margin-bottom: 5px;
+}
+
+.tablet__opcao:hover {
+    background-color: rgba(125, 77, 217, 0.6);
+}
+
+.wifi__opcao:hover {
+    background-color: rgba(255, 165, 0, 0.6)
+}

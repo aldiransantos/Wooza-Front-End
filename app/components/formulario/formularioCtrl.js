@@ -1,3 +1,6 @@
-app.controller('formCtrl', function ($scope) {
-    console.log($scope.form.nomeCompleto);
+
+app.controller('formularioCtrl', function ($scope) {
+    $scope.enviarFormulario = function () {
+        console.log($scope.form);
+    };
 });
