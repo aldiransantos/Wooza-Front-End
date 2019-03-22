@@ -1,0 +1,8 @@
+<div class="tablet" ng-repeat="x in info.planos">
+    <div>
+        <p>{{ x.franquia }}</p>
+        <p>{{ x.valor }}</p>
+        <p>{{ x.ativo }}</p>
+    </div>
+    <a href="#!/form/{{ x.sku }}">Comprar</a>
+</div>

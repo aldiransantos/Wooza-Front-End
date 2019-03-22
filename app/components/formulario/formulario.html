@@ -1,0 +1,49 @@
+<div>
+    <form name="formulario">
+
+        <p>Username:<br>
+            <input type="text" name="nomeCompleto" ng-model="form.nomeCompleto" required>
+            <span style="color:red" ng-show="formCtrl.user.$invalid">
+                <span ng-show="formCtrl.user.$error.required">Username is required.</span>
+            </span>
+        </p>
+
+        <p>Email:<br>
+            <input type="email" name="email" ng-model="form.email">
+            <span style="color:red" ng-show="formCtrl.email.$dirty && formCtrl.email.$invalid">
+                <span ng-show="formCtrl.email.$error.required">Email is required.</span>
+                <span ng-show="formCtrl.email.$error.email">Invalid email address.</span>
+            </span>
+        </p>
+
+        <p>Data de Nascimento:<br>
+            <input type="date" name="dataNascimento" ng-model="form.dataNascimento" required>
+            <span style="color:red" ng-show="formCtrl.email.$dirty && formCtrl.email.$invalid">
+                <span ng-show="formCtrl.email.$error.required">Email is required.</span>
+                <span ng-show="formCtrl.email.$error.date">Invalid email address.</span>
+            </span>
+        </p>
+
+        <p>CPF:<br>
+            <input type="number" name="cpf" ng-model="form.cpf" required>
+            <span style="color:red" ng-show="formCtrl.email.$dirty && formCtrl.email.$invalid">
+                <span ng-show="formCtrl.email.$error.required">Email is required.</span>
+                <span ng-show="formCtrl.email.$error.number">Invalid email address.</span>
+            </span>
+        </p>
+
+        <p>Telefone:<br>
+            <input type="tel" name="telefone" ng-model="form.telefone" required>
+            <span style="color:red" ng-show="formCtrl.email.$dirty && formCtrl.email.$invalid">
+                <span ng-show="formCtrl.email.$error.required">Email is required.</span>
+                <span ng-show="formCtrl.email.$error.number">Invalid email address.</span>
+            </span>
+        </p>
+
+        <p>
+            <input type="submit" ng-disabled="formCtrl.user.$dirty && formCtrl.user.$invalid ||  
+        formCtrl.email.$dirty && formCtrl.email.$invalid">
+        </p>
+
+    </form>
+</div>

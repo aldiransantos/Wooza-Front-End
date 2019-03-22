@@ -1,0 +1,12 @@
+<div class="computador" ng-repeat="x in info.planos">
+    <div>
+        <p>{{ x.franquia }}</p>
+        <p>{{ x.valor }}</p>
+        <p>{{ x.aparelho.nome }}</p>
+        <p>{{ x.aparelho.valor }}</p>
+        <p>{{ x.aparelho.numeroParcelas }}</p>
+        <p>{{ x.aparelho.valorParcela }}</p>
+        <p>{{ x.ativo }}</p>
+    </div>
+    <a href="#!/form/{{ x.sku }}">Comprar</a>
+</div>

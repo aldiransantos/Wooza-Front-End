@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wooza - Teste Front-end</title>
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-route/angular-route.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="components/plataformas/plataformasCtrl.js"></script>
+    <script src="components/planos/computador/computadorCtrl.js"></script>
+    <script src="components/planos/tablet/tabletCtrl.js"></script>
+    <script src="components/planos/wifi/wifiCtrl.js"></script>
+</head>
+
+<body ng-app="myApp">
+    <div ng-include="'view/header.html'"></div>
+
+    <ng-view></ng-view>
+
+    <div ng-include="'view/footer.html'"></div>
+</body>
+
+</html>
